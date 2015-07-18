@@ -314,7 +314,7 @@ void ConvertInt16ToFloat(RIOInterface* THIS, void *buf, float *outputBuf, size_t
 
 	// Allocate AudioBuffers for use when listening.
 	// TODO: Move into initialization...should only be required once.
-	bufferList = (AudioBufferList *)malloc(sizeof(AudioBuffer));
+	bufferList = (AudioBufferList *)malloc(sizeof(AudioBufferList));
 	bufferList->mNumberBuffers = 1;
 	bufferList->mBuffers[0].mNumberChannels = 1;
 	
